@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+
+
+</head>
+
+<body onload="loadPage2()" >
+    <!-- onload="loadPage2()" -->
+    <div id="teamSelection">
+        <p>
+          <h2> <span id="ChooseTeam" value=""></span>: please select your team</h2>
+        </p>
+    </div>
+    <!-- onpageshow="loadPage()" -->
+    <div id="main">
+
+        <div id="selectOption">
+            <div id="playerList">
+                <select name="addItem2" id="addItem2" onclick="remainingPlayer()" multiple>
+                </select>
+            </div>
+
+            <div id="selectedPlayers">
+                <select name="addItem2" id="selectedItem2" onclick="remainingPlayerdeSelect()" multiple>
+                </select>
+            </div>
+
+
+        </div>
+        <div id="capandvisecpSelect">
+            <div>
+                Credit Remaining: <span id="remainingCredit"></span>
+            </div>
+            <div>
+                <button id="selectButton" onclick="chooseCaptainTeam2()">Select Captain</button>
+            </div>
+
+            <!-- <span>Select caption</span> -->
+            <div id="selectCapStyle">
+                <select name="chooseCaption" id="selectedCap2" onclick="selectedcaptainTeam2()">
+                </select>
+                <p>
+                    Your captain is: <span id="result1" value=""></span>
+                </p>
+            </div>
+            <div>
+                <select name="chooseVisecaption" id="selectedViseCap2" onclick="chooseVisecaptionTeam2()">
+                </select>
+                <p>
+                    Your Visecaptain is: <span id="result2" value=""></span>
+                </p>
+            </div>
+            <div>
+                <button id="selectButton" onclick="startMatch()">Continue for Start Match</button>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <script src="./script.js"></script>
+    <script>
+
+        // player2Selected = [];
+        // i=0;
+        // newArray = JSON.parse(localStorage.getItem('newArr'))
+        // console.log("newArray", newArray);
+        // ar2 = []
+        // var selectBox = document.getElementById("addItem2");
+        // for (let i = 0; i < newArray.length; i++) {
+        //     var option = newArray[i];
+        //     selectBox.add(new Option(`${i + 1}:${option.name},${option.playingRole},${option.credit}`));
+        //     ar2.push(newArray[i])
+        //     // console.log(ar)
+        // }
+
+        // function remainingPlayer() {
+        //     var left = document.getElementById("addItem2");
+        //     var right = document.getElementById("selectedItem2");
+            
+        //     var index = left.selectedIndex;
+        //     var v = `${i + 1}:${ar2[index].name},${ar2[index].playingRole},${ar2[index].credit}`;
+        //     if (index == -1) return;
+        //     // var new1 = document.getElementById("selectedItemOption");
+        //     // new1.text = v;
+        //     var credit = 0;
+        //     for (let i = 0; i < player2Selected.length; i++) {
+        //         credit += player2Selected[i].credit ;
+        //         if (credit > 100) {
+        //             alert("Credit is more then 100")
+        //             return;
+        //         }
+
+        //     }
+
+        //     if (player2Selected.length < 11) {
+        //         player2Selected.push(ar2[index]);
+        //     } else {
+        //         alert("only 11 slected")
+        //         return;
+        //     }
+
+        //     // console.log("new1.text", new1.text);
+        //     right.add(new Option(v));
+        //     // var option = data[index];
+        //     // right.add(new Option(`${index+1}:${option.name},${option.playingRole},${option.credit}`));
+        //     left.remove(index);
+        //     i++;
+        //     ar2.splice(index, 1)
+        //     // console.log("ar", ar);
+        //     console.log(player2Selected)
+        //     // localStorage.setItem('ar2', JSON.stringify(player2Selected));
+
+        // }
+    </script>
+</body>
+
+</html>

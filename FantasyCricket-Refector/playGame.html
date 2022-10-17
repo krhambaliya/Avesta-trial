@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body onload="matchPlayingPageDataLoad()">
+    <div id="plyerList1">
+        <span id="team1"></span>
+        <div id="selectOption">
+            <ul id="myList" style="list-style: none;"></ul>
+        </div>
+
+    </div>
+
+    <div id="plyerList2">
+        <span id="team2"></span>
+        <div id="team2Player">
+            <ul id="myList2" style="list-style: none;"></ul>
+        </div>
+    </div>
+
+    <div id="startGameButton">
+        <button id="selectBut" onclick="hitAndGetrun(playing11Team1,playing11Team2)">Start Game</button></br>
+        <!-- <button id="selectBut2" onclick="getRunForTeam2()">Start Game</button> -->
+        <button id="selectBut2" onclick="hitAndGetrun(playing11Team2,playing11Team1)">Start Game</button>
+    </div>
+    <div id="displayPlayer">
+        Batsman: <span id="batsman"></span></p>
+        Bowler: <span id="bowler"></span>
+    </div>
+    <div id="displayPlayer">
+        Score Team 1: <span id="runs1"></span></br>
+        Score Team 2: <span id="runs2"></span>
+    </div>
+    <div id="scoreBoar">
+        <!-- <span id="scoreBoard"></span> -->
+        <textarea name="" id="scoreBoard" cols="40" rows="18" readonly="true"></textarea>
+    </div>
+
+    <!-- <script src="./script.js"></script> -->
+    <script src="./tossPageJS.js"></script>
+    <script src="./team1SelectionPageJS.js"></script>
+    <script src="./team2SelectionPageJS.js"></script>
+    <script src="./playGameJS.js"></script>
+</body>
+
+</html>

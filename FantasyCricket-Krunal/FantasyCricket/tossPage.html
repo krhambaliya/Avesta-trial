@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Welcome To FantasyCricket</title>
+    <script src="./script.js"></script>
+    <a href="./team1Selectionpage.html"></a>
+    <a href="./team2Selectionpage.html"></a>
+    <a href="./playGame.html"></a>
+
+    <!-- <a href="./chooseCaption.html"></a> -->
+</head>
+
+<body>
+    <div id="firstPage">
+        <form name="playerDetails" id="tossForm">
+        
+            <div id="splitleft">
+                <strong>Enter Team 1 Name:</strong>
+                <input type="text" name="player1" value="" size="13" onchange="" />
+                <input type="button" name="enterButton" value="Enter" onclick="displayTeam1()" />
+                <!-- </br> -->
+                <textarea name="player1team" readonly="true" value="" id="styleLeft" cols="20" rows="1" style="resize: none; text-align: center;">Team 1 Name</textarea> </p>
+            </div>
+    
+            <div id="spliteright">
+                <strong>Enter Team 2 Name:</strong>
+                <input type="text" name="player2" value="" size="13" onchange="" />
+                <input type="button" name="enterButton" value="Enter" onclick="displayTeam2()" />
+                <!-- </p> -->
+                <textarea name="player2team" readonly="true" value="" id="styleRight" cols="20" rows="1" style="resize: none; text-align: center;">Team 2 Name</textarea> </p>
+            </div>
+            
+        </form>
+        <div id="toss" name = "ltoss">
+            <input type="button" id="click" name="toss" value="Toss a Coin" onclick="clickFortoss()" />
+            <p id="divId">
+                Winner is: <span id="result" value=""></span>  
+            </p>
+        </div>
+    </div>
+
+    
+    
+    
+    
+
+
+
+
+    <script>
+
+    </script>
+</body>
+
+</html>

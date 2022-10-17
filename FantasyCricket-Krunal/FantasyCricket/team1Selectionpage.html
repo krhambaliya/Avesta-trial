@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+
+
+</head>
+
+<body onload="loadPage()">
+    <div id="teamSelection">
+        <p >
+            <h2><span id="ChooseTeam" value="" ></span> : please select your team </h2>
+        </p>
+    </div>
+    <!-- onpageshow="loadPage()" -->
+    <div id="main">
+
+        <div id="selectOption">
+            <div id="playerList">
+                <select name="addItem" id="addItem" onclick="selectPlayer()" multiple>
+                </select>
+            </div>
+            
+            <div id="selectedPlayers">
+                <select name="addItem" id="selectedItem" onclick="deSelectPlayer()" multiple>
+                </select>
+            </div>
+            
+
+        </div>
+        <div id="capandvisecpSelect">
+            <div>
+                Credit Remaining: <span id="remainingCredit"></span>
+            </div>
+            <div>
+                <button id="selectButton" onclick="chooseCaptain()">Select Captain</button>
+            </div>
+            
+            <!-- <span>Select caption</span> -->
+            <div id="selectCapStyle">
+                <select name="chooseCaption" id="selectedCap" onclick="selectedcaptain()">
+                </select>
+                <p>
+                    Your captain is: <span id="result1" value=""></span>
+                </p>
+            </div>
+            <div>
+                <select name="chooseVisecaption" id="selectedViseCap" onclick="chooseVisecaption()">
+                </select>
+                <p>
+                    Your Visecaptain is: <span id="result2" value=""></span>
+                </p>
+            </div>
+            <div>
+                <button id="selectButton" onclick="team2select()">Continue for team 2</button>
+            </div>
+           
+        </div>
+    </div>
+
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

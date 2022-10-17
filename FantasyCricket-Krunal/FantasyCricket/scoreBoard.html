@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+
+</head>
+<body onload="getScoreboard()">
+    <div id="plyerList1Score">
+        <div id="selectOptionScore">
+            <ul id="myListScore" style="list-style: none;"></ul>
+        </div>
+
+    </div>
+   
+    <div id="plyerList2Score">
+        <div id="team2PlayerScore">
+            <ul id="myList2Score" style="list-style: none;"></ul>
+        </div>
+
+    </div>
+    <div id="finalResult">
+        <div id="fanScore1">
+            Total Fantasy score Team 1: <span id="totalScoreTeam1"></span>
+        </div>
+        <div id="fanScore2">
+            Total Fantasy score Team 2: <span id="totalScoreTeam2"></span>
+        </div>
+        <div id="team1Score">
+            Totalscore Team 1: <span id="ScoreTeam1"></span>
+        </div>
+        <div id="team2Score">
+            Totalscore Team 2: <span id="ScoreTeam2"></span>
+        </div>
+    </div>
+    <div id="winnerDiv">
+        <h1>Winner: <span id="winner"></span></h1>
+    </div>
+
+    
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,178 @@
+* {
+    padding: 0;margin: 0;
+}
+
+body {
+    background-color: aqua;
+}
+
+#tossForm {
+    /* background-color: black; */
+    padding-top: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+
+#splitleft,
+#spliteright {
+    text-align: center;
+    padding: 10px;
+}
+
+#splitleft {
+    padding-left: 200px;
+}
+
+#spliteright {
+    padding-right: 200px;
+}
+#styleLeft , #styleRight{
+    margin-top: 15px;
+}
+
+#toss {
+    text-align: center;
+    padding-top: 10px;
+    /* justify-content: space-evenly; */
+}
+
+
+#teamSelection {
+    /* visibility: hidden; */
+    text-align: center;
+    position: relative;
+    margin-top: 20px;
+}
+
+#addItem,
+#selectedItem,
+#addItem2,
+#selectedItem2
+{
+    height: 500px;
+    width: 250px;
+
+}
+
+#selectedCap,#selectedCap2, #selectedViseCap ,#selectedViseCap2{ 
+    width: 250px;
+    
+}
+
+#selectCapStyle {
+    padding-top: 20px;
+    /* display: inline; */
+    /* justify-content: space-between; */
+}
+
+#selectOption ,#selectOptionScore {
+    display: inline-flex;
+    flex-direction: row;
+    /*font-size: 30px;
+    color: green;
+    border: 4px dashed green;
+    padding: 5px;
+    width: 400px; */
+    /* justify-content: space-evenly; */
+}
+#selectedPlayers{
+    padding-left: 200px;
+}
+#main{
+    margin-top: 15px;
+    padding-left: 100px;
+    display: inline-flex;
+    /* justify-items: space-evenly; */
+}
+/* #capandvisecpSelect{
+    display: inline-flex; */
+    /* justify-content: space-between; */
+/* } */
+
+/* ,#addItem , #selectedItem, #selectButton, #selectedCap, #result */
+#selectBut2{
+    visibility: hidden;
+    /* margin-top: 0px; */
+}
+#capandvisecpSelect{
+    padding-left: 150px;
+    padding-top: 150px;
+    text-align: center;
+}
+
+#plyerList1 , #plyerList1Score{
+    float:left;
+    
+}
+#plyerList2 ,#plyerList2Score{
+    float:right;
+    
+    /* text-align: right; */
+    
+}
+#plyerList1 , #plyerList2 {
+    /* border: 2px solid red; */
+    margin: 20px;
+    width: 300px;
+    /* padding: 10px; */
+    margin-top: 145px;
+    box-shadow: 2px 3px 5px 0px rgba(0,0,0,0.75);
+    text-align: center;
+    position: relative;
+}
+#plyerList1 li, #plyerList2 li , #plyerList1Score li, #plyerList2Score li{
+    padding: 5px;
+    border: 0.20px solid red;
+}
+#startGameButton{
+    padding-top: 120px;
+    padding-left: 650px;
+    /* padding-top: 0px; */
+} 
+#detailsOrder{
+    margin-left: 135px;
+}
+/* #team2Player{
+    padding-left:150px;
+    background:blue;
+    
+} */
+
+#displayPlayer{
+    padding-top: 25px;
+    margin-left: 550px;
+}
+#bowler{
+    /* padding-left: 80px; */
+}
+#scoreBoar{
+
+    padding-left: 520px;
+    padding-top: 25px;
+}
+#scoreBoard{
+    background-color: rgb(0, 209, 209);
+    box-shadow: 2px 3px 5px 0px rgba(0,0,0,0.75);
+    border: 0.40px solid red;
+    /* outline: none; */
+    /* overflow: auto; */
+    resize: none;
+    
+}
+
+#fanScore1 , #fanScore2 , #team1Score ,#team2Score {
+    padding-top: 10px;
+    margin-left: 580px;
+}
+
+#finalResult{
+    padding-top: 180px;
+}
+
+#winnerDiv{
+    padding-top: 15px;
+   padding-left: 500px;
+}

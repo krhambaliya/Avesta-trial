@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+
+
+</head>
+
+<body onload="team1SelectionPageDataLoad()">
+    <div id="teamSelection">
+        <p>
+        <h2><span id="ChooseTeam" value=""></span> : please select your team </h2>
+        </p>
+    </div>
+    <!-- onpageshow="loadPage()" -->
+    <div id="main">
+
+        <div id="selectOption">
+            <div id="playerList">
+                <select name="addItem" id="addItem" onclick="remainingPlayerSelect(playersDetailsForTeam1,player1SelectedTeam)" multiple>
+                </select>
+            </div>
+
+            <div id="selectedPlayers">
+                <select name="addItem" id="selectedItem" onclick="remainingPlayerdeSelect(playersDetailsForTeam1,player1SelectedTeam)" multiple>
+                </select>
+            </div>
+
+
+        </div>
+        <div id="capandvisecpSelect">
+            <div>
+                Credit Remaining: <span id="remainingCredit"></span><br>
+                Bowler Count: <span id="bowCount" value=""></span><br>
+                Batsman count: <span id="batCount" value=""></span><br>
+                WicketKepeer Count: <span id="wkCOunt" value=""></span>
+            </div>
+            <div>
+                <br><button id="selectButton" onclick="chooseCaptainAndViseCaptain(player1SelectedTeam)">Select Captain</button>
+            </div>
+
+            <!-- <span>Select caption</span> -->
+            <div id="selectCapStyle">
+                <select name="chooseCaption" id="selectedCap" onclick="selectCaptain(player1SelectedTeam,Team1Cap)">
+                </select>
+                <p>
+                    Your captain is: <span id="result1" value=""></span>
+                </p>
+            </div>
+            <div>
+                <br><select name="chooseVisecaption" id="selectedViseCap" onclick="selectVisecaptain(player1SelectedTeam,Team1Cap,Team1ViseCap) ">
+                </select>
+                <p>
+                    Your Visecaptain is: <span id="result2" value=""></span>
+                </p>
+            </div>
+            <div>
+                <br><button id="selectButton" onclick="team2Selection()">Continue for team 2</button>
+            </div>
+
+        </div>
+    </div>
+    <script src="./tossPageJS.js"></script>
+    <script src="./team1SelectionPageJS.js"></script>
+</body>
+
+</html>
